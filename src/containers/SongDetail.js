@@ -32,7 +32,7 @@ class SongDetail extends Component {
     }
 
     async componentWillUnmount() {
-        await TrackPlayer.stop();
+        await TrackPlayer?.stop?.();
         this.backHandler.remove();
     }
 
